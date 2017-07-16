@@ -38,6 +38,7 @@ create table ANKETA
    OTVORENA_OD          datetime not null,
    OTVORENA_DO          datetime not null,
    CREATED_AT           date not null,
+   ZA_SVE				boolean default 0,
    primary key (ID_ANKETE)
 );
 
@@ -48,11 +49,16 @@ create table CAS
 (
    ID_CAS               int(64) not null auto_increment,
    ID_PREDMET           int not null,
-   ID_GRUPA             int not null,
    ID_PREDAVAC          int not null,
-   TIP_CASA             char(1) not null default 'P' comment 'Predavanje (P) / Vezbe (V)
-            ',
+   TIP_CASA             char(1) not null default 'P' comment 'Predavanje (P) / Vezbe (V)',
    primary key (ID_CAS)
+);
+
+create table GRUPE_NA_CASU
+(
+   ID_CAS            int not null,
+   ID_GRUPA           int not null,
+   primary key (ID_CAS, ID_GRUPA)
 );
 
 /*==============================================================*/
@@ -62,6 +68,7 @@ create table GRUPA
 (
    ID_GRUPA             int not null auto_increment,
    IME                  varchar(60) not null,
+   GODINA               int DEFAULT 1,
    AKTIVNA_OD           datetime not null,
    AKTIVNA_DO           datetime not null,
    primary key (ID_GRUPA)
@@ -91,7 +98,7 @@ create table ODGOVOR
    ID_PITANJA           int not null,
    ID_CAS               int,
    ID_ANKETE            int not null,
-   OCENA                int not null,
+   OCENA                int,
    KOMENTAR             varchar(256),
    primary key (ID_ODGOVOR)
 );
@@ -114,6 +121,7 @@ create table PITANJE
    ID_PITANJA           int not null auto_increment,
    TEKST                varchar(256) not null,
    CREATED_AT           date not null,
+   OBAVEZNO				boolean default 1,
    TIP_PITANJA          char(10) not null default 'O' comment 'Opste pitanje (O) / Pitanje o predmetu (P)',
    primary key (ID_PITANJA)
 );
@@ -153,7 +161,7 @@ create table PREDMET
 /*==============================================================*/
 /* Table: STUDENT                                               */
 /*==============================================================*/
-create table STUDENT
+/*create table STUDENT
 (
    ID_STUDENT           int not null auto_increment,
    IME                  varchar(60) not null,
@@ -164,6 +172,29 @@ create table STUDENT
    LOZINKA              char(128) not null,
    NADIMAK              varchar(50) not null,
    primary key (ID_STUDENT)
+);*/
+
+
+CREATE TABLE `STUDENT` (
+  `ID_STUDENT` int(11) NOT NULL,
+  `IME` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `PREZIME` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `JMBG` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `INDEKS` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` char(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `NADIMAK` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `remember_token` char(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+create table STUDENT_NA_CASU
+(
+   ID_CAS               int not null,
+   ID_STUDENT           int not null,
+   primary key (ID_CAS, ID_STUDENT)
 );
 
 /*==============================================================*/
@@ -175,6 +206,11 @@ create table STUDENT_U_GRUPI
    ID_STUDENT           int not null,
    primary key (ID_GRUPA, ID_STUDENT)
 );
+
+ALTER TABLE `STUDENT`
+  ADD PRIMARY KEY (`ID_STUDENT`),
+  MODIFY COLUMN ID_STUDENT INT(11) NOT NULL auto_increment,
+  ADD UNIQUE KEY `email` (`email`);
 
 alter table CAS add constraint FK_PREDAVAC_NA_CASU foreign key (ID_PREDAVAC)
       references PREDAVAC (ID_PREDAVAC) on delete restrict on update restrict;
@@ -220,4 +256,25 @@ alter table STUDENT_U_GRUPI add constraint FK_STUDENT_U_GRUPI foreign key (ID_GR
 
 alter table STUDENT_U_GRUPI add constraint FK_STUDENT_U_GRUPI2 foreign key (ID_STUDENT)
       references STUDENT (ID_STUDENT) on delete restrict on update restrict;
+
+alter table STUDENT_NA_CASU add constraint FK_STUDENT_NA_CASU foreign key (ID_CAS)
+      references CAS (ID_CAS) on delete restrict on update restrict;
+
+alter table STUDENT_NA_CASU add constraint FK_STUDENT_NA_CASU2 foreign key (ID_STUDENT)
+      references STUDENT (ID_STUDENT) on delete restrict on update restrict;
+
+alter table GRUPE_NA_CASU add constraint FK_GRUPE_NA_CASU foreign key (ID_CAS)
+      references CAS (ID_CAS) on delete restrict on update restrict;
+
+
+alter table GRUPE_NA_CASU add constraint FK_GRUPE_NA_CASU2 foreign key (ID_GRUPA)
+      references GRUPA (ID_GRUPA) on delete restrict on update restrict;
+
+ALTER TABLE `GRUPA` ADD `GODINA` INT NULL DEFAULT '1' AFTER `AKTIVNA_DO`, ADD INDEX `Godina_studija` (`GODINA`);
+
+      
+
+
+
+      
 
