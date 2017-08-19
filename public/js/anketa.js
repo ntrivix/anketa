@@ -51,6 +51,7 @@ function processCas(cas) {
         return true;
     } else {
         //prikazi greske
+        $(cas).effect( "shake", { times: 4, distance: 4}, 600 );
         return false;
     }
 }
@@ -77,7 +78,7 @@ function validateCas(cas) {
     return isValid;
 }
 
-$(function () {
+$(document).ready(function () {
 
     savedData = JSON.parse(localStorage.getItem($("#id_ankete").val()));
     if (savedData != undefined)
@@ -113,7 +114,7 @@ $(function () {
         if (processCas(cas)){
             $.post($("#id_ankete").val()+"/submit", anketaData)
                 .done(function( data ) {
-                    alert( "Data Loaded: " + data );
+                    alert("Uspesno ste zavrsili anketu!");
                 }).fail(function(xhr, status, error) {
                 // error handling
                 console.log(status);

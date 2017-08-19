@@ -64,7 +64,7 @@ with open('raspored.csv', newline='', encoding="utf8") as csvfile:
                 god = g[0]
                 if g[0] == 'P':
                     god = 5
-                cur.execute(query, g, god)
+                cur.execute(query, (g, god))
                 grupaId = cur.lastrowid
                 sveGrupe[g] = grupaId
                 casoviGrupe[grupaId] = []

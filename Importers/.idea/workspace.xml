@@ -10,7 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Importers$Import.coverage" NAME="Import Coverage Results" MODIFIED="1500215052399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Importers$Import.coverage" NAME="Import Coverage Results" MODIFIED="1500243900936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Importers$Izvestaj.coverage" NAME="Izvestaj Coverage Results" MODIFIED="1500243964331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -18,14 +19,14 @@
       <file leaf-file-name="Import.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Import.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-756">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="35" />
               <folding>
-                <marker date="1500222388607" expanded="true" signature="1304:1344" ph="INSERT INTO `predmet`... " />
-                <marker date="1500222388607" expanded="true" signature="1583:1649" ph="INSERT INTO `PREDAVAC`... " />
-                <marker date="1500222388607" expanded="true" signature="1933:2038" ph="INSERT INTO `grupa`... " />
-                <marker date="1500222388607" expanded="true" signature="2436:2512" ph="INSERT INTO `CAS`... " />
-                <marker date="1500222388607" expanded="true" signature="2875:2939" ph="INSERT INTO `cas`... " />
+                <marker date="1500243924142" expanded="true" signature="1304:1344" ph="INSERT INTO `predmet`... " />
+                <marker date="1500243924142" expanded="true" signature="1583:1649" ph="INSERT INTO `PREDAVAC`... " />
+                <marker date="1500243924142" expanded="true" signature="1933:2038" ph="INSERT INTO `grupa`... " />
+                <marker date="1500243924142" expanded="true" signature="2438:2514" ph="INSERT INTO `CAS`... " />
+                <marker date="1500243924142" expanded="true" signature="2877:2941" ph="INSERT INTO `cas`... " />
               </folding>
             </state>
           </provider>
@@ -34,22 +35,21 @@
       <file leaf-file-name="Izvestaj.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Izvestaj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1349">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="19" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
-                <marker date="1500227032094" expanded="true" signature="1140:1231" ph="SELECT `id_a... anketa" />
-                <marker date="1500227032094" expanded="true" signature="1365:1434" ph="SELECT COUNT... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="1365:1436" ph="SELECT COUNT... POPUNIO_ANKETU" />
-                <marker date="1500227032094" expanded="true" signature="1589:1755" ph="SELECT COUNT... POPUNIO_ANKETU" />
-                <marker date="1500227032094" expanded="true" signature="1915:2048" ph="SELECT COUNT... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="2181:2442" ph="SELECT godin... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="2614:3612" ph="SELECT tekst... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="3738:3950" ph="SELECT naziv... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="4090:4245" ph="SELECT AVG(o... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="4386:4711" ph="SELECT ime,p... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="5386:5925" ph="SELECT conca... odgovor" />
-                <marker date="1500227032094" expanded="true" signature="6067:6238" ph="SELECT `ime`... cas" />
+                <marker date="1500275639047" expanded="true" signature="1156:1247" ph="SELECT `id_a... anketa" />
+                <marker date="1500275639047" expanded="true" signature="1381:1450" ph="SELECT COUNT... odgovor" />
+                <marker date="1500275639047" expanded="true" signature="1381:1452" ph="SELECT COUNT... POPUNIO_ANKETU" />
+                <marker date="1500275639047" expanded="true" signature="1587:2488" ph="SELECT TEKST... ODGOVOR" />
+                <marker date="1500275639047" expanded="true" signature="1587:2548" ph="SELECT TEKST... ODGOVOR" />
+                <marker date="1500275639047" expanded="true" signature="2685:2919" ph="SELECT naziv... odgovor" />
+                <marker date="1500275639047" expanded="true" signature="3064:3071" ph="SELECT AVG(o... odgovor" />
+                <marker date="1500275639047" expanded="true" signature="3064:3274" ph="SELECT PREDM... ODGOVOR" />
+                <marker date="1500275639047" expanded="true" signature="3064:3296" ph="SELECT PREDM... ODGOVOR" />
+                <marker date="1500275639047" expanded="true" signature="3450:3787" ph="SELECT ime,p... odgovor" />
+                <marker date="1500275639047" expanded="true" signature="3933:4184" ph="SELECT PREDA... ODGOVOR" />
               </folding>
             </state>
           </provider>
@@ -86,8 +86,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -142,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Import">
+  <component name="RunManager" selected="Python.Izvestaj">
     <configuration default="false" name="Import" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,6 +157,25 @@
       <module name="Importers" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Import.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Izvestaj" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Importers" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Izvestaj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,12 +323,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.Import" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Izvestaj" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.Import" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.Izvestaj" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Import" />
       </list>
     </recent_temporary>
   </component>
@@ -330,16 +351,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12884334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29968455" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15720081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -385,36 +405,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Import.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="252">
+          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="35" />
           <folding>
-            <marker date="1500222388607" expanded="true" signature="1304:1344" ph="INSERT INTO `predmet`... " />
-            <marker date="1500222388607" expanded="true" signature="1583:1649" ph="INSERT INTO `PREDAVAC`... " />
-            <marker date="1500222388607" expanded="true" signature="1933:2038" ph="INSERT INTO `grupa`... " />
-            <marker date="1500222388607" expanded="true" signature="2436:2512" ph="INSERT INTO `CAS`... " />
-            <marker date="1500222388607" expanded="true" signature="2875:2939" ph="INSERT INTO `cas`... " />
+            <marker date="1500243924142" expanded="true" signature="1304:1344" ph="INSERT INTO `predmet`... " />
+            <marker date="1500243924142" expanded="true" signature="1583:1649" ph="INSERT INTO `PREDAVAC`... " />
+            <marker date="1500243924142" expanded="true" signature="1933:2038" ph="INSERT INTO `grupa`... " />
+            <marker date="1500243924142" expanded="true" signature="2438:2514" ph="INSERT INTO `CAS`... " />
+            <marker date="1500243924142" expanded="true" signature="2877:2941" ph="INSERT INTO `cas`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Izvestaj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1349">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="19" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
-            <marker date="1500227032094" expanded="true" signature="1140:1231" ph="SELECT `id_a... anketa" />
-            <marker date="1500227032094" expanded="true" signature="1365:1434" ph="SELECT COUNT... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="1365:1436" ph="SELECT COUNT... POPUNIO_ANKETU" />
-            <marker date="1500227032094" expanded="true" signature="1589:1755" ph="SELECT COUNT... POPUNIO_ANKETU" />
-            <marker date="1500227032094" expanded="true" signature="1915:2048" ph="SELECT COUNT... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="2181:2442" ph="SELECT godin... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="2614:3612" ph="SELECT tekst... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="3738:3950" ph="SELECT naziv... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="4090:4245" ph="SELECT AVG(o... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="4386:4711" ph="SELECT ime,p... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="5386:5925" ph="SELECT conca... odgovor" />
-            <marker date="1500227032094" expanded="true" signature="6067:6238" ph="SELECT `ime`... cas" />
+            <marker date="1500275639047" expanded="true" signature="1156:1247" ph="SELECT `id_a... anketa" />
+            <marker date="1500275639047" expanded="true" signature="1381:1450" ph="SELECT COUNT... odgovor" />
+            <marker date="1500275639047" expanded="true" signature="1381:1452" ph="SELECT COUNT... POPUNIO_ANKETU" />
+            <marker date="1500275639047" expanded="true" signature="1587:2488" ph="SELECT TEKST... ODGOVOR" />
+            <marker date="1500275639047" expanded="true" signature="1587:2548" ph="SELECT TEKST... ODGOVOR" />
+            <marker date="1500275639047" expanded="true" signature="2685:2919" ph="SELECT naziv... odgovor" />
+            <marker date="1500275639047" expanded="true" signature="3064:3071" ph="SELECT AVG(o... odgovor" />
+            <marker date="1500275639047" expanded="true" signature="3064:3274" ph="SELECT PREDM... ODGOVOR" />
+            <marker date="1500275639047" expanded="true" signature="3064:3296" ph="SELECT PREDM... ODGOVOR" />
+            <marker date="1500275639047" expanded="true" signature="3450:3787" ph="SELECT ime,p... odgovor" />
+            <marker date="1500275639047" expanded="true" signature="3933:4184" ph="SELECT PREDA... ODGOVOR" />
           </folding>
         </state>
       </provider>

@@ -19,13 +19,13 @@
                 @foreach($casovi as $cas)
                     <div class="cas panel panel-default @if ($cas != $casovi[0]) hide @else visible @endif" id="cas_{{$cas->ID_CAS}}">
                         <input type="hidden" class="id_cas" value="{{$cas->ID_CAS}}">
-                        <div class="panel-heading">{{$cas->predmet->IME}} ({{($cas->TIP_CASA == 'P') ? "Predavanje" : "Vežbe" }}) - {{$cas->predavac->IME}} {{$cas->predavac->PREZIME}}</div>
+                        <div class="panel-heading"><h3>{{$cas->predmet->IME}} ({{($cas->TIP_CASA == 'P') ? "Predavanje" : "Vežbe" }})</h3><h4>{{$cas->predavac->IME}} {{$cas->predavac->PREZIME}}</h4></div>
 
                         <ul class="list-group">
                             @foreach($pitanja as $pitanje)
                                 <li class="list-group-item">
 
-                                    <p>{{$pitanje->TEKST}}</p>
+                                    <p>{{$pitanje->TEKST}} @if($pitanje->TIP_PITANJA == 'P')<i class="fa fa-asterisk text-danger" aria-hidden="true"></i>@endif</p>
                                     <form>
                                         <input type="hidden" class="id_pitanja" value="{{$pitanje->ID_PITANJA}}">
                                         @if($pitanje->TIP_PITANJA == 'P')
@@ -37,11 +37,12 @@
                                                 @endfor
                                         @else
                                             <input type="hidden" name="qtype" value="OP">
-                                            <textarea></textarea>
+                                            <textarea style="width: 100%"></textarea>
                                         @endif
                                     </form>
                                 </li>
                             @endforeach
+
                             <li class="list-group-item" style="min-height: 48px;">
                                 @if ($cas != $casovi[0])<button class="prev-button">Prev</button>@endif
                                 @if ($cas != $casovi[count($casovi)-1])<button class="next-button pull-right">Next</button> @else
@@ -63,5 +64,6 @@
 @endsection
 
 @section('js-src')
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="{{ asset('js/anketa.js') }}"></script>
 @endsection
